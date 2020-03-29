@@ -1,0 +1,9 @@
+.digits-landing-background {
+  background: url('images/digits-header.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white !important;
+}
+
+.landing-grid {
+  color: white !important;
+}
