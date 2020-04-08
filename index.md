@@ -1,4 +1,4 @@
-![](https://raw.githubusercontent.com/ics-software-engineering/meteor-application-template-react/master/doc/landing-page.png)
+<img src="doc/screenshot.PNG">
 
 Meteor-application-template-react is a sample Meteor 1.9 application that illustrates:
 
@@ -164,76 +164,34 @@ The application implements a simple CRUD application for managing "Stuff", which
 
 By default, each user only sees the Stuff that they have created.  However, the settings file enables you to define default accounts.  If you define a user with the role "admin", then that user gets access to a special page which lists all the Stuff defined by all users.
 
-#### Landing page
-
-When you retrieve the app at http://localhost:3000, this is what should be displayed:
-
-![](https://raw.githubusercontent.com/ics-software-engineering/meteor-application-template-react/master/doc/landing-page.png)
-
-The next step is to use the Login menu to either Login to an existing account or register a new account.
 
 #### Login page
 
-Clicking on the Login link, then on the Sign In menu item displays this page:
+Clicking on the Login link, then on the Sign In menu item displays a sign-in sheet.
 
-![](https://raw.githubusercontent.com/ics-software-engineering/meteor-application-template-react/master/doc/signin-page.png)
 
 #### Register page
 
-Alternatively, clicking on the Login link, then on the Sign Up menu item displays this page:
+Alternatively, clicking on the Login link, then on the Sign Up menu item displays a registration form.
 
-![](https://raw.githubusercontent.com/ics-software-engineering/meteor-application-template-react/master/doc/register-page.png)
+#### Add Contacts page
 
+After logging in, here is the page that allows you to add new Contacts.
 
-#### Landing (after Login) page, non-Admin user
+#### List Contacts page
 
-Once you log in (either to an existing account or by creating a new one), the navbar changes as follows:
-
-![](https://raw.githubusercontent.com/ics-software-engineering/meteor-application-template-react/master/doc/landing-after-login-page.png)
-
-You can now add new Stuff documents, and list the Stuff you have created. Note you cannot see any Stuff created by other users.
-
-#### Add Stuff page
-
-After logging in, here is the page that allows you to add new Stuff:
-
-![](https://raw.githubusercontent.com/ics-software-engineering/meteor-application-template-react/master/doc/add-stuff-page.png)
-
-#### List Stuff page
-
-After logging in, here is the page that allows you to list all the Stuff you have created:
-
-![](https://raw.githubusercontent.com/ics-software-engineering/meteor-application-template-react/master/doc/list-stuff-page.png)
-
-You click the "Edit" link to go to the Edit Stuff page, shown next.
-
-#### Edit Stuff page
-
-After clicking on the "Edit" link associated with an item, this page displays that allows you to change and save it:
-
-![](https://raw.githubusercontent.com/ics-software-engineering/meteor-application-template-react/master/doc/edit-stuff-page.png)
+After logging in, here is the page that allows you to list all the Contacts you have created.
 
 #### Landing (after Login), Admin user
 
-You can define an "admin" user in the settings.json file. This user, after logging in, gets a special entry in the navbar:
-
-![](https://raw.githubusercontent.com/ics-software-engineering/meteor-application-template-react/master/doc/admin-landing-page.png)
+You can define an "admin" user in the settings.json file. This user, after logging in, gets a special entry in the navbar.
 
 #### Admin page (list all users stuff)
 
-To provide a simple example of a "super power" for Admin users, the Admin page lists all of the Stuff by all of the users:
+To provide a simple example of a "super power" for Admin users, the Admin page lists all of the Contacts by all of the users.
 
-![](https://raw.githubusercontent.com/ics-software-engineering/meteor-application-template-react/master/doc/admin-list-stuff-page.png)
 
 Note that non-admin users cannot get to this page, even if they type in the URL by hand.
-
-### Collections
-
-The application implements a single Collection called "Stuff". Each Stuff document has the following fields: name, quantity, condition, and username.
-
-The Stuff collection is defined in [imports/api/stuff/stuff.js](https://github.com/ics-software-engineering/meteor-application-template-react/blob/master/app/imports/api/stuff/stuff.js).
-
-The Stuff collection is initialized in [imports/startup/server/stuff.js](https://github.com/ics-software-engineering/meteor-application-template-react/blob/master/app/imports/startup/server/stuff.js).
 
 ### CSS
 
