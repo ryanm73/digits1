@@ -24,7 +24,7 @@ class ListContacts extends React.Component {
             {this.props.contacts.map((contact, index) => <Contact
                 key={index}
                 contact={contact}
-                notes={this.props.notes.filter(note => (note.contactId === contact._id))}/>)}
+                notes={this.props.notes.filter(note => (note.contactId === contact._id))} Contacts={Contacts}/>)}
           </Card.Group>
         </Container>
     );
